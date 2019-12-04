@@ -53,6 +53,7 @@ class AuMaster(MycroftSkill):
     @intent_file_handler('block.d.au.locate.intent')
     def handle_block_d_au_locate(self, message):
         self.speak_dialog('block.d.au.locate')
+        self.gui.show_image('https://ibb.co/hW1zxRb')
 
     @intent_file_handler('canteen.au.locate.intent')
     def handle_canteen_au_locate(self, message):
