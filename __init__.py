@@ -7,7 +7,7 @@ class AuMaster(MycroftSkill):
 
     @intent_file_handler('au.schools.intent')
     def handle_au_schools(self, message):
-        self.speak_dialog('There are several different schools under Ansal University . These are School of Engineering and Technology . Sushant School of Art and Architecture . School of Hospitality and Management . Sushant School of Business . School of Law . Sushant School of Design . Sushant School of Health Sciences . and Sushant School of Planning and Development . ')
+        self.speak('There are several different schools under Ansal University . These are School of Engineering and Technology . Sushant School of Art and Architecture . School of Hospitality and Management . Sushant School of Business . School of Law . Sushant School of Design . Sushant School of Health Sciences . and Sushant School of Planning and Development . ')
 
     @intent_file_handler('dean.set.who.intent')
     def handle_dean_set_who(self, message):
