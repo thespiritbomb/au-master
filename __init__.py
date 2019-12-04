@@ -36,6 +36,15 @@ class AuMaster(MycroftSkill):
         self.speak('The I.T. Lab is situated in Room number D-312 on the 3rd floor of the D Block . ')
         self.speak_dialog('block.d.au.locate')
 
+    @intent_file_handler('set.chem.lab.intent')
+    def handle_set_chem_lab(self, message):
+        self.speak('The Chemistry Lab is situated in Room number D-212 on the 2nd floor of the D Block . ')
+        self.speak_dialog('block.d.au.locate')
+
+    @intent_file_handler('set.clubs.intent')
+    def handle_set_clubs(self, message):
+        self.speak('The school of engineering and technology has various clubs . These are Cultural Club . Sports Club . Social Welfare club . and Computer Society of India . ')
+
     @intent_file_handler('set.au.locate.intent')
     def handle_set_au_locate(self, message):
         self.speak('The School of Engineering and Technology is situated on the 3rd floor of the D Block .')
@@ -44,6 +53,22 @@ class AuMaster(MycroftSkill):
     @intent_file_handler('block.d.au.locate.intent')
     def handle_block_d_au_locate(self, message):
         self.speak_dialog('block.d.au.locate')
+
+    @intent_file_handler('canteen.au.locate.intent')
+    def handle_canteen_au_locate(self, message):
+        self.speak('Exit the reception and take a right . walk straight for 5 meters and take a right. walk straight for 17 meters . The canteen will be right ahead of you . ')
+
+    @intent_file_handler('volleyball.au.locate.intent')
+    def handle_volleyball_au_locate(self, message):
+        self.speak('Exit the reception and take a right . walk straight for 25 meters until you reach the food stalls . Take a right . The volleyball court will be right ahead of you . ')
+
+    @intent_file_handler('law.au.locate.intent')
+    def handle_law_au_locate(self, message):
+        self.speak('Exit the reception and take a right . walk straight for 20 meters and take a right . walk straight for 450 meters . The law block will be right ahead of you . ')
+
+    @intent_file_handler('hostels.au.locate.intent')
+    def handle_hostels_au_locate(self, message):
+        self.speak('Exit the reception and take a right . walk straight for 20 meters and take a right . walk straight for 450 meters . The hostels will be to your right . ')
 
 
 def create_skill():
